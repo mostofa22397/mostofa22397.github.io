@@ -5,25 +5,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
 </head>
+<link rel="stylesheet" href="css/style.css">
 <style>
-   body{
-       width: 70%;
-       height: 120px;
-      
-     
-     background-image: url("rihanna.jpg");
-      
-   }
+    body {
+        color:black;
+        margin: auto;
+        padding: 0px;
+        background-image: url("img/rihanna.jpg");
+        background-repeat:no-repeat ;
+        height: 1700px;
+        width: 70%;
+    
+
+
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+        background-color: black;
+    }
+
+    .left img {
+        width: 136px;
+        /* filter: invert (100%); */
+    }
+
+    .left div {
+        text-align: center;
+        color: white;
+    }
+
+    .mid {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+       
+
+
+        /* border: 2px solid yellow */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid green */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: rgb(224, 31, 79);
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointed
+    }
+
+    .btn:hover {
+        background-color: rgb(214, 155, 60);
+    }
+    .container{
+        margin: 300px 0px;
+        color: black;
+    }
+    .r{
+        color: white;
+        text-align: left;
+        font-size: 36px;
+    }
 </style>
 
 <body>
-<p>This is paragraph
+    <header>
+        <div class="left">
+            <img src="img/logo.jpg" alt="logo">
+            <div>Hongkong</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Collections</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best brand in Honkong</h1>
+        <form action="nonaction.php">
+            <div>
+                <label for="name">Name:</label>
 
-</p>
-<p>This is second paragraph</p>
+                <input type="text" name="myname" id="name">
+
+            </div>
+            <br>
+            <div>
+                <label for="n">Email:</label>
+
+                <input type="email" name="myEmail" id="n">
+            </div>
+
+
+
+
+            <br>
+            <div>
+                <label for="namee">Gender:</label>
+
+                Male <input type="radio" name="male"> Female:<input type="radio" name="male"> Other:<input type="radio"
+                    name="male" id="namee">
+            </div>
+            <br>
+            <div>
+                <label for="nameee">Write a short discription:</label>
+
+                <br><textarea name="Write" id="nameee" cols="60" rows="5"></textarea>
+            </div>
+
+            
+            <div>
+
+
+                <input type="submit" value="Submit" id="">
+            </div>
+            
+
+            <div>
+                <input type="reset" value="Reset Now">
+
+            </div>
+        </form>
+    </div>
+    <br>
+    <div>
+        <p class="r">&#169; 2020 by Ahammed</p>
+    </div>
 
 </body>
 
