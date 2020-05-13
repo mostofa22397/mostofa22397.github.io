@@ -2,7 +2,7 @@ body {
     color:black;
     margin: auto;
     padding: 0px;
-    background-image: url("images/rihanna.jpg");
+    background-image: url("../images/rihanna.jpg");
     background-repeat:no-repeat ;
     height: 1700px;
     width: 70%;
