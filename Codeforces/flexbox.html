@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible tutorial</title>
 </head>
 <style>
-    .container{
+    .container {
         height: 500px;
         width: 100%;
         border: 2px solid black;
         display: flex;
         /* flex-direction: row;ata ty kono change hoi na  
-    */
+   
     /* flex-direction: column ; ata column onugai nicy nicy hoi */
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column-reverse; */
-    flex-wrap: wrap;
-    flex-wrap: wrap-reverse;
-    flex-flow: row-reverse wrap;
-    justify-content: center; 
-    /* ata 1st line ar center ay asy */
-    justify-content: space-between;
-    /* majy soman space asy */
-    justify-content: space-evenly;
-    /* ata samny picy soman space hoi */
-    justify-content: space-around;
-    /* ata tay space 1=2,2,2,2,1 */
-    align-items: center;
-    /* ata majkhany asy */
-    align-items: flex-end;
-    /* ata ses ay asy */
-    align-items: flex-start;
-    /* ata first ay asy */
-    align-items: stretch;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap;
+    /* ata ky no wrap kora jai */
+        flex-wrap: wrap-reverse;
+        /* flex-flow: row-reverse wrap; ata ky abar nowrap kora jai */
+        justify-content: center;
+        /* ata 1st line ar center ay asy */
+        justify-content: space-between;
+        /* majy soman space asy */
+        justify-content: space-evenly;
+        /* ata samny picy soman space hoi */
+        justify-content: space-around;
+        /* ata tay space 1=2,2,2,2,1 */
+        align-items: center;
+        /* ata majkhany asy */
+        align-items: flex-end;
+        /* ata ses ay asy */
+        align-items: flex-start;
+        /* ata first ay asy */
+        align-items: stretch;
+        /* ata image ay dakbo and folder ar name download.png */
     }
-    .item{
+
+    .item {
         width: 200px;
         height: 200px;
         background: tomato;
-    border: 2px solid red;
-    margin: 10px;
-    padding: 3px;
+        border: 2px solid red;
+        margin: 10px;
+        padding: 3px;
     }
+#item1{
+    order: 3;
+    /* atar many hoccy jai tar order sobchay boro saita sobar last ay jaby
+     */
+     flex-grow: 2;
+     /* ata ty boro hoi  */
+     flex-shrink: 2;
+     /* ata ty choto hoi */
 
+}
+#item{
+    align-self:flex-end ;
+    align-self: flex-start;
+    align-self: center;
+
+}
+#item4{
+order: 40;
+flex-grow: 3;
+flex-shrink: 3;
+flex-basis: 300px;
+/* ata flex-direction: ar upor kag kory that means ata row, column ar upor kag kory; */
+
+}
+#item5{
+    flex:2 2 300px;
+    /* atar prothom ta flex grow, second ta shrink and third ta flex direction hisaby kag kory */
+}
+
+  
 </style>
+
 <body>
     <h1>This is heading.</h1>
     <div class="container">
@@ -61,4 +95,5 @@
 
 
 </body>
+
 </html>
