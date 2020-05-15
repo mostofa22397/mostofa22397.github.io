@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding:23px 12px;
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        background-color:burlywood;
+        box-shadow:10px 12px green ;
+        box-shadow: -10px -12px green;
+        box-shadow: -10px -12px 12px green;
+        /* sobarlasty 12px ta blour radius colour */
+        box-shadow: -10px -12px 12px 34px rgba(2, 3, 4, 0.2);
+        /* akany 34px spread radius many colour choria jai */
+        /* rgba akany a hoccy alpha ata black ta ky aktu modify kory */
+        box-shadow:inset 3px 5px green ;
+        /* akany ata vitory colour hoby */
+        box-shadow: 3px 5px green,4px 8px rgb(20, 7, 7);
+
+
+
+    }
+    .card h1{
+        text-shadow: 3px 4px wheat;
+        text-shadow: 3px 4px 3px wheat;
+        text-shadow: -3px -4px 3px wheat;
+
+
+
+    }
+</style>
+<body>
+   <div class="container">
+       <div class="card" id="card-1">
+          <h1> This is c++ course  </h1> 
+          <p>I have started c++ course .Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellendus fuga ut fugiat quae. Recusandae voluptate itaque consectetur et delectus earum tenetur veritatis, doloremque quo iusto error dolores perferendis reprehenderit.</p>      
+        
+
+        </div>
+       <div class="card" id="card-2">
+          <h1> This is HTML course</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem obcaecati ratione sapiente, pariatur dolores rerum adipisci ducimus deserunt, quia fugiat modi iure libero a dicta quaerat, possimus quis veniam qui!</p>
+        </div>
+       <div class="card" id="card-3">
+           <h1> Card3</h1>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, corporis provident aliquam quas fugiat quo harum similique id beatae quisquam temporibus nobis. Reiciendis asperiores vel tenetur architecto exercitationem, a et.
+           </p>
+        </div>
+   </div>
+</body>
+</html>
