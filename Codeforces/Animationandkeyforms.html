@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyform</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            height: 250px;
+            width: 250px;
+            background-color: green;
+            position: relative;
+            animation-name: Ahammed1;
+            animation-name: Mostofa2;
+            animation-duration: 7s;
+            animation-iteration-count: 1;
+            /*ar infinite dily cholty thakby */
+            /* akany 7 use kora jai ar pholy 7 bar cholty thakbo */
+            /* animation-fill-mode: forwards; */
+            /*1 and forwards dawar pholy ata jokon ses hoby tokon ata ses hoya jaby and last ay atka pory jaby */
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in; */
+            /* ar pholy 1st ty onk speed hoby/*
+            animation-timing-function: ease-out;
+            /* ar pholy last ay onk speed hoby */
+            /* animation-timing-function: ease-in-out; */
+            /* ar pholy 1st and last ay onk speed hoby */
+            /* animation-delay: 3s; */
+            /* ar many ata 3s por start hoby */
+            /* animation-direction: alternate; */
+            /* ata forward ar mota kag kory many last ay giay thamby */
+            /* animation-direction: reverse; */
+            /* ar pholy ata ulta reverse hoi*/
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+            animation: Mostofa2 5s ease-in 1s 12 backwards
+        }
+
+        @keyframes Ahammed1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 100%
+            }
+        }
+        @keyframes Mostofa2{
+            0%{
+                top:0px;
+                left:0px
+
+            }
+            25%{
+                top:250px;
+                left: 0px;}
+        
+75%{
+    top:250px;
+    left: 250px;
+}
+100%{
+    top:0px;
+    left:250px
+}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+
+</body>
+
+</html>
