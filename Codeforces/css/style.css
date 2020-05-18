@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+box-1 {
+  background-color: crimson;
+  height: 200px;
+  width: 100%;
+}
+box-2 {
+  background-color: darkblue;
+  height: 200px;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+box-3 {
+  background-color: crimson;
+  height: 200px;
+  width: 100%;
+}
