@@ -1,92 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Attribute</title>
     <style>
-        .container {
-            margin: auto;
-            display: block;
-            width: 233px;
-        }
+      .container {
+        margin: auto;
+        display: block;
+        width: 233px;
+      }
 
-        input {
-            display: block;
-        }
+      input {
+        display: block;
+      }
 
-        input[type='text'] {
-            padding: 23px;
-            border: 2px solid red;
-        }
+      input[type="text"] {
+        padding: 23px;
+        border: 2px solid red;
+      }
 
-        a[target] {
-            font-size: 44px;
-            color: violet;
-        }
+      a[target] {
+        font-size: 44px;
+        color: violet;
+      }
 
-        a[target='_self'] {
-            font-size: 44px;
-            color: red;
-        }
+      a[target="_self"] {
+        font-size: 44px;
+        color: red;
+      }
 
-        input[type='email'] {
-            color: yellow;
-            border: 4px solid #000;
-        }
+      input[type="email"] {
+        color: yellow;
+        border: 4px solid #000;
+      }
 
-        /* li:nth-child(3){
+      /* li:nth-child(3){
             color: thistle;
         }
         li:nth-child(2n+0){
             color: violet;
         } */
-        /* 2n+0 ar many hoccy proti dui tar por por colour change hoby */
-        /* li:nth-child(3n+3){
+      /* 2n+0 ar many hoccy proti dui tar por por colour change hoby */
+      /* li:nth-child(3n+3){
             color: violet;
         } */
-        /* akany proti 3 ghor por por hoi and +3 ar many list 3 thaky hoby */
-        li:nth-child(odd) {
-            background-color: red;
-        }
+      /* akany proti 3 ghor por por hoi and +3 ar many list 3 thaky hoby */
+      li:nth-child(odd) {
+        background-color: red;
+      }
 
-        li:nth-child(even) {
-            background-color: wheat;
-        }
+      li:nth-child(even) {
+        background-color: wheat;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <h1><a href="http://google.com" target='_blank'>Go to google</a></h1>
-        <h1><a href="http://facebook.com" target='_self'>Go to Facebook</a></h1>
-        <h1><a href="http://youtube.com" target='_blank'>Go to youtube</a></h1>
+      <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+      <h1><a href="http://facebook.com" target="_self">Go to Facebook</a></h1>
+      <h1><a href="http://youtube.com" target="_blank">Go to youtube</a></h1>
 
+      <form action="" class="form-control">
+        <input type="text" placeholder="Enter your name" />
+        <input type="email" placeholder="Enter your email" />
 
-        <form action="" class="form-control">
-            <input type="text" placeholder="Enter your name">
-            <input type="email" placeholder="Enter your email">
-
-            <input type="password" placeholder="Enter your passward">
-            <input type="submit" value="Submit">
-        </form>
-        <ul>
-            <li class="item" id="item1">Item1</li>
-            <li class="item" id="item2">Item2</li>
-            <li class="item" id="item3">Item3</li>
-            <li class="item" id="item4">Item4</li>
-            <li class="item" id="item5">Item5</li>
-            <li class="item" id="item6">Item6</li>
-            <li class="item" id="item7">Item7</li>
-            <li class="item" id="item8">Item8</li>
-            <li class="item" id="item9">Item9</li>
-            <li class="item" id="item10">Item10</li>
-
-        </ul>
+        <input type="password" placeholder="Enter your passward" />
+        <input type="submit" value="Submit" />
+      </form>
+      <ul>
+        <li class="item" id="item1">Item1</li>
+        <li class="item" id="item2">Item2</li>
+        <li class="item" id="item3">Item3</li>
+        <li class="item" id="item4">Item4</li>
+        <li class="item" id="item5">Item5</li>
+        <li class="item" id="item6">Item6</li>
+        <li class="item" id="item7">Item7</li>
+        <li class="item" id="item8">Item8</li>
+        <li class="item" id="item9">Item9</li>
+        <li class="item" id="item10">Item10</li>
+      </ul>
     </div>
-
-</body>
-
+  </body>
 </html>
