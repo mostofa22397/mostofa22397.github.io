@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries in Css Grid</title>
+    <style>
+        .container {
+            padding: 6px;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 500px) {
+            body {
+                background-color: darkgrey;
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 600px) {
+            body {
+                background-color: darkorchid;
+            }
+            .container {
+            padding: 6px;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section aside aside'
+            'footer footer footer footer'
+            ;
+        }
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 700px) {
+            body {
+                background-color: deepskyblue;
+            }
+            .container {
+            padding: 6px;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section aside aside aside'
+            'footer footer footer footer'
+            ;
+        }
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+        .btn{
+            background-color: red;
+            padding: 6px;
+            border: 2px solid black;
+        }
+        span{
+            padding: 6px;
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class='btn'>
+            <span>Hone </span>
+            <span>About</span>
+            <span>Contact Us</span>
+        </nav>
+        <section class='btn'>
+            <h2>Learn Code with Python</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore molestias, magni nihil minus, provident,
+                at saepe officia officiis odit incidunt quidem ex. Nemo quos magnam optio corrupti dolorem accusamus
+                dicta?</p>
+        </section>
+        <aside class='btn'>
+            <h2>More About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quisquam labore nam deserunt! Sit amet
+                fuga minima. Incidunt dolorem in iure corrupti maiores laboriosam voluptate illum recusandae temporibus
+                perferendis. Tenetur atque numquam libero earum quia. Temporibus, quis! Facilis earum dolor saepe, est
+                odit molestiae placeat.</p>
+        </aside>
+    </div>
+    <footer class='btn'>&#169;Copyright by Ahammed</footer>
+
+</body>
+
+</html>
