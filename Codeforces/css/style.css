@@ -21,3 +21,7 @@ box-3 {
   height: 200px;
   width: 100%;
 }
+p {
+  color: red;
+  background-color: cornsilk;
+}
