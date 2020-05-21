@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header::before {
+        content: "";
+
+        background: url("https://source.unsplash.com/user/erondu/1600x900")
+          no-repeat center center/cover;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        left: 0;
+        opacity: 0.5;
+      }
+      section {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: 6px;
+
+        align-items: center;
+        justify-content: center;
+        padding: 9px;
+        text-align: center;
+      }
+      section::after {
+        content: "This is content";
+      }
+      h3 {
+        font-size: 3rem;
+      }
+      .naviar {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 12px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="naviar">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h3>Welcome to our site</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam soluta
+        reiciendis molestias, totam iste distinctio expedita dolorum, nemo
+        placeat deserunt unde. Libero consectetur ea veniam commodi porro eaque
+        suscipit temporibus.
+      </p>
+    </section>
+    <hr />
+  </body>
+</html>

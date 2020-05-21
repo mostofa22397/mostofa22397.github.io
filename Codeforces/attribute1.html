@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute</title>
+    <style>
+      .container {
+        width: 226px;
+        border: 2px solid black;
+        margin: auto;
+      }
+      input {
+        display: block;
+      }
+      input[type="text"] {
+        padding: 6px;
+        border: 6px solid black;
+      }
+      a[target] {
+        color: red;
+      }
+      li:nth-child(3) {
+        color: saddlebrown;
+        font-weight: bold;
+      }
+      li:nth-child(2n + 0) {
+        background-color: slateblue;
+        font-weight: bold;
+      }
+      li:nth-child(odd) {
+        color: purple;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+      <h1><a href="http://youtube.com" target="_blank">Go to youtube</a></h1>
+      <h1><a href="http://facebook.com" target="_blank">Go to facebook</a></h1>
+      <form action="" class="b">
+        <input type="text" placeholder="Enter your name" />
+        <input type="text" placeholder="Enter your passward" />
+        <input type="submit" value="Submit" />
+      </form>
+      <ul>
+        <li class="a">This is list-1</li>
+        <li class="a">This is list-2</li>
+        <li class="a">This is list-3</li>
+        <li class="a">This is list-4</li>
+        <li class="a">This is list-5</li>
+        <li class="a">This is list-6</li>
+        <li class="a">This is list-7</li>
+        <li class="a">This is list-8</li>
+        <li class="a">This is list-9</li>
+        <li class="a">This is list-10</li>
+        <li class="a">This is list-11</li>
+        <li class="a">This is list-12</li>
+        <li class="a">This is list-13</li>
+        <li class="a">This is list-14</li>
+        <li class="a">This is list-15</li>
+      </ul>
+    </div>
+  </body>
+</html>

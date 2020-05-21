@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      header::before {
+        content: "";
+        background: url("https://source.unsplash.com/user/erondu/1600x900")
+          no-repeat center center/cover;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+        color: rgb(rgb(102, 20, 20), green, blue);
+      }
+      .navbar {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        padding: 12px;
+        font-size: 20px;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        margin: 12px;
+        padding: 12pxpx;
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        height: 342px;
+      }
+      section::after {
+        content: "This is content";
+      }
+      h3 {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li>Home</li>
+          <li>About</li>
+          <li>Service</li>
+          <li>Contace us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h3>Welcome to our site</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        iusto aliquid non consequuntur fuga eos, quod, accusamus rem minus et
+        nisi explicabo hic possimus id ex temporibus suscipit, magnam numquam.
+      </p>
+    </section>
+    <hr />
+  </body>
+</html>
