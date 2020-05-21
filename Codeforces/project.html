@@ -3,19 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Online food delivery service in India | MyonlineMeal.com</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>My online food delivery services in India |MyMeal.com</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      :root {
+        --navbar-height: 59px;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+      }
+      .box {
+        margin: -14px -4px;
+      }
+      .box img {
+        width: 59px;
+        margin: 16px;
+      }
+      .container ul {
+        display: flex;
+      }
+      .container ul li {
+        list-style: none;
+        font-size: 27px;
+      }
+      .container ul li a {
+        display: block;
+
+        padding: 16px;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      .container ul li a:hover {
+        color: bl;
+        background-color: yellow;
+      }
+      .container::before {
+        content: " ";
+        background: purple;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        opacity: 0.9;
+      }
+      .container {
+        position: relative;
+      }
+      #b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 400px;
+      }
+      #b::before {
+        content: " ";
+        background: url("images/breakfast-1804457_1920.jpg") no-repeat center
+          center/cover;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        opacity: 0.8;
+      }
+      .f {
+        font-size: 3rem;
+        padding: 12px;
+      }
+      #b h1 {
+        text-align: center;
+      }
+      #b p {
+        color: black;
+        font-size: 17px;
+        font-family: sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <nav id="navbar">
-      <div id="logo">
-        <img src="1.png" alt="MyonlineMeal" />
-      </div>
+    <nav class="container">
+      <div class="box"><img src="images/kfc_PNG31.png" alt="kfc.logo" /></div>
       <ul>
         <li class="item"><a href="#">Home </a></li>
         <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About</a></li>
         <li class="item"><a href="#">Contact us</a></li>
       </ul>
     </nav>
+    <section id="b">
+      <h1 class="f">Welcome to our site</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        enim quaerat eveniet, optio, porro perspiciatis architecto neque, ab
+        accusamus maiores saepe possimus labore sunt qui fugit at illo aut non?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nam unde
+        earum aliquam praesentium perspiciatis tempore, provident accusantium
+        repellendus et maxime dignissimos numquam reprehenderit placeat rem odio
+        reiciendis omnis nisi?
+      </p>
+      <button class="c">Order Now</button>
+    </section>
   </body>
 </html>
