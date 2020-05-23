@@ -15,13 +15,14 @@
       .container {
         display: flex;
         align-items: center;
+        position: sticky;
       }
       .box {
-        margin: -14px -4px;
+        margin: -9px;
       }
       .box img {
-        width: 59px;
-        margin: 16px;
+        width: 53px;
+        margin: 11px;
       }
       .container ul {
         display: flex;
@@ -33,7 +34,7 @@
       .container ul li a {
         display: block;
 
-        padding: 16px;
+        padding: 12px;
         border-radius: 10px;
         text-decoration: none;
       }
@@ -43,18 +44,21 @@
       }
       .container::before {
         content: " ";
-        background: purple;
+        background: purple no-repeat center center / cover;
         position: absolute;
         z-index: -1;
         height: 100%;
         width: 100%;
-        opacity: 0.9;
+        opacity: 0.3;
+        top: 0px;
+        left: 0px;
       }
       .container {
         position: relative;
       }
       #b {
         display: flex;
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -63,13 +67,18 @@
       }
       #b::before {
         content: " ";
-        background: url("images/breakfast-1804457_1920.jpg") no-repeat center
+        background: url("images/breakfast-1804457_1920.jpg ") no-repeat center
           center/cover;
         position: absolute;
+
         z-index: -1;
         height: 100%;
         width: 100%;
         opacity: 0.8;
+        height: 700px;
+      }
+      .n {
+        margin-top: 134px;
       }
       .f {
         font-size: 3rem;
@@ -82,6 +91,113 @@
         color: black;
         font-size: 17px;
         font-family: sans-serif;
+      }
+      .c {
+        margin: 17px;
+        padding: 6px;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: khaki;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .center {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        
+        
+      }
+      .i {
+        font-size: 25px;
+        padding: 12px;
+      }
+      #g {
+        margin: 0px;
+        display: flex;
+      }
+      #g .h {
+        border: 2px solid black;
+        margin: 6px;
+        padding: 6px;
+        text-align: center;
+        border-radius: 25px;
+        background-color: #673ab70d;
+      }
+      #g .h img {
+        height: 160px;
+        display: block;
+        margin: auto;
+      }
+      .t{
+        font-size: 17px;
+      }
+      #h{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #h img{
+        width: 124px;
+      }
+      #r{
+        height: 355px;
+      }
+      .q{
+        padding:34px
+      }
+      .r::before{
+        content: "";
+        background: url("images/bg.jpg")no-repeat center center /cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+       
+
+      }
+      .r{
+        position: relative;
+      }
+      #y{
+        position: relative;
+
+      }
+      #y::before{
+        content: "";
+        background:url("images/contact.jpg") no-repeat center center/cover;
+      position: absolute;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      opacity: 0.9;
+      }
+      footer{
+        background-color: black;
+        color: white;
+        padding: 9px;
+      }
+      #e{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 6px;
+      }
+      #e input,#e textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 22px;
+      }
+      #e form{
+        width: 40%;
+
+      }
+      #e label{
+        font-size:23px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: rgb(54, 8, 8);
       }
     </style>
   </head>
@@ -110,5 +226,86 @@
       </p>
       <button class="c">Order Now</button>
     </section>
+    <section class="class">
+      <h1 class="f n center">Our Services</h1>
+      <div id="g">
+        <div class="h">
+          <img src="images/3.png" alt="" />
+          <h2 class="i center">Food Ordering</h2>
+          <p class="center t">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            eligendi tempora doloribus dolore, necessitatibus aliquam hic!
+            Consectetur doloremque optio harum quam provident perferendis minima
+            saepe odit, quae necessitatibus et ad.
+          </p>
+        </div>
+        <div id="g">
+          <div class="h">
+            <img src="images/2.png" alt="" />
+            <h2 class="i center">Food Catering</h2>
+            <p class="center t">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              eligendi tempora doloribus dolore, necessitatibus aliquam hic!
+              Consectetur doloremque optio harum quam provident perferendis minima
+              saepe odit, quae necessitatibus et ad.
+            </p>
+          </div>
+          <div id="g">
+            <div class="h">
+              <img src="images/1.png" alt="" />
+              <h2 class="i center">Bulk ordering</h2>
+              <p class="center t">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                eligendi tempora doloribus dolore, necessitatibus aliquam hic!
+                Consectetur doloremque optio harum quam provident perferendis minima
+                saepe odit, quae necessitatibus et ad.
+              </p>
+            </div>
+      </div>
+    </section>
+    <section class="r">
+      <h1 class="center f">Our clients</h1>
+      <div id="h">
+        <div class="q">
+          <img src="images/logo1.png" alt="">
+        </div>
+        <div class="q">
+          <img src="images/logo2.png" alt="">
+        </div><div class="q">
+          <img src="images/logo3.png" alt="">
+        </div><div class="q">
+          <img src="images/logo4.png" alt="">
+        </div>
+
+      </div>
+    </section>
+    <section id="y">
+      <h1 class="center f">Contact us</h1>
+      <div id="e">
+        <form action="">
+          <div class="p">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+          </div>
+          <div class="p">
+            <label for="email">Email:</label>
+            <input type="email" name="name" id="email" placeholder="Enter your email">
+          </div> 
+           <div class="p">
+            <label for="phone">Phone:</label>
+            <input type="phone" name="name" id="phone" placeholder="Enter your number">
+          </div>
+          <div class="p">
+            <label for="Message">Write a message:</label>
+            <textarea name="name" id="Message" cols="30" rows="10"></textarea>
+          </div> 
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="center">
+        Copyright &copy; www.Mymeal.com. ALL right reserved!
+      </div>
+    </footer>
   </body>
 </html>
