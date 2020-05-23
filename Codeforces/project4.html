@@ -3,38 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My online food delivery service | Mymeal.com</title>
-    <style></style>
+    <title>My online food delivery services |My meal.com</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0pxpx;
+      }
+      :root {
+        --nav-height: 59px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .container img {
+        width: 59px;
+      }
+      .container ul {
+        display: flex;
+      }
+      .container ul li {
+        list-style: none;
+        padding: 14px;
+      }
+      .container ul li a {
+        text-decoration: none;
+        font-size: 25px;
+      }
+      .container ul li a:hover {
+        background-color: blue;
+        color: blanchedalmond;
+        border-radius: 10px;
+      }
+      .container::before {
+        content: "";
+        background-color: blanchedalmond;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+      }
+      .container {
+        position: relative;
+      }
+      #g {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+
+        justify-content: center;
+      }
+      h1 {
+        font-size: 42px;
+        padding: 17px;
+        color: #e60a55;
+      }
+      section p {
+        text-align: center;
+        font-size: 19px;
+        font-family: sans-serif;
+        color: #901251;
+      }
+      section::before {
+        content: "";
+        background: url("images/cereal-563796_1920.jpg") no-repeat center
+          center/cover;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        opacity: 122.3;
+        top: 0px;
+        left: 0px;
+      }
+      section {
+        position: relative;
+      }
+      section button {
+        padding: 6px;
+        font-weight: bold;
+      }
+      section button:hover {
+        background-color: green;
+      }
+    </style>
   </head>
   <body>
     <nav class="container">
-      <div class="box">
-        <img src="images/1.png" alt="my pic" width="200px" />
-      </div>
-      <ul id="b">
-        <li class="box"><a href="#">Home</a></li>
-        <li class="box"><a href="#">About</a></li>
-        <li class="box"><a href="#">Services</a></li>
-        <li class="box"><a href="#">Contact us</a></li>
+      <div id="box"><img src="images/kfc_PNG31.png" alt="my.logo" /></div>
+      <ul id="em">
+        <li class="class"><a href="#">Home</a></li>
+        <li class="class"><a href="#">Services</a></li>
+        <li class="class"><a href="#">About</a></li>
+        <li class="class"><a href="#">Contact us</a></li>
       </ul>
     </nav>
-    <section id="c">
-      <h1 id="d">Welcome to our site</h1>
+    <section id="g">
+      <h1 id="t">Welcome to our site</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-        porro sequi molestiae qui reprehenderit eaque praesentium magni vero
-        quae corporis, blanditiis, labore soluta officiis repellat accusamus
-        nulla molestias quaerat? Fugit, delectus magni. Veritatis eligendifgfg
-        dolores cupiditate soluta, beatae neque!
+        We may not be able to travel to every country on Earth but a great way
+        of getting a taste of a culture is by sampling their delicious national
+        dishes. Try cooking up a storm in your own kitchen or find a great
+        restaurant and let your taste buds set sail on a culinary adventure
+        across the globe. Here are 50 international foods you shouldn't miss.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-        repudiandae corporis facere qui vero ea, adipisci nobis esse soluta
-        perferendis suscipit cumque, maiores delectus reiciendis odio rerum
-        sequi aliquid dolor eligendi nisi eum, placeat molestiae nostrum
-        veritatis? Nobis, facere.
-        <button id="f">Order Now</button>
+        This warm, comforting noodle dish has taken the world by storm and,
+        rightly so. Its apparent simplicity belies complex flavours that are at
+        once unctuous and refreshing. Born in northern Vietnam in the late 19th
+        century, pho’s development was influenced by Chinese and French cooking,
+        mirroring the history of the country. Today it is a uniquely Vietnamese
+        offering that you won’t have to go far to find wherever you are in the
+        world.
       </p>
+      <button id="f">Order Now</button>
     </section>
   </body>
 </html>

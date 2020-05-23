@@ -1,0 +1,39 @@
+#b {
+  height: 380px;
+  flex-direction: column;
+}
+#b::before {
+  height: 672px;
+}
+#b p {
+  font-size: 13px;
+}
+
+#g {
+  flex-direction: column;
+}
+#g.h {
+  padding: 14px;
+  margin: 2px 0px;
+  margin-bottom: 20px;
+}
+
+.container {
+  flex-direction: column;
+}
+.container ul li a {
+  font-size: 19px;
+  padding: 0px 7px;
+  padding-bottom: 8px;
+}
+#h {
+  flex-wrap: wrap;
+}
+#h img {
+  width: 66px;
+  padding: 6px;
+  height: auto;
+}
+#e {
+  width: 80%;
+}
