@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(9, auto);
+        grid-gap: 2rem;
+      }
+      .box {
+        background-color: yellow;
+        border: 2px solid black;
+      }
+      .box:first-child {
+        /* grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4; */
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">This is box-1</div>
+      <div class="box" id="box-2">This is box-2</div>
+      <div class="box" id="box-3">This is box-3</div>
+      <div class="box" id="box-4">This is box-4</div>
+      <div class="box" id="box-5">This is box-5</div>
+      <div class="box" id="box-6">This is box-6</div>
+      <div class="box" id="box-7">This is box-7</div>
+      <div class="box" id="box-8">This is box-8</div>
+      <div class="box" id="box-9">This is box-9</div>
+      <div class="box" id="box-10">This is box-10</div>
+      <div class="box" id="box-11">This is box-11</div>
+      <div class="box" id="box-12">This is box-12</div>
+      <div class="box" id="box-13">This is box-13</div>
+      <div class="box" id="box-14">This is box-14</div>
+      <div class="box" id="box-15">This is box-15</div>
+      <div class="box" id="box-16">This is box-16</div>
+      <div class="box" id="box-17">This is box-17</div>
+      <div class="box" id="box-18">This is box-18</div>
+      <div class="box" id="box-19">This is box-19</div>
+      <div class="box" id="box-20">This is box-20</div>
+      <div class="box" id="box-21">This is box-21</div>
+      <div class="box" id="box-22">This is box-22</div>
+      <div class="box" id="box-23">This is box-23</div>
+      <div class="box" id="box-24">This is box-24</div>
+      <div class="box" id="box-25">This is box-25</div>
+      <div class="box" id="box-26">This is box-26</div>
+      <div class="box" id="box-27">This is box-27</div>
+      <div class="box" id="box-28">This is box-28</div>
+      <div class="box" id="box-29">This is box-29</div>
+      <div class="box" id="box-30">This is box-30</div>
+      <div class="box" id="box-31">This is box-31</div>
+      <div class="box" id="box-32">This is box-32</div>
+      <div class="box" id="box-33">This is box-33</div>
+      <div class="box" id="box-34">This is box-34</div>
+      <div class="box" id="box-35">This is box-35</div>
+      <div class="box" id="box-36">This is box-36</div>
+      <div class="box" id="box-37">This is box-37</div>
+      <div class="box" id="box-38">This is box-38</div>
+      <div class="box" id="box-39">This is box-39</div>
+      <div class="box" id="box-40">This is box-40</div>
+      <div class="box" id="box-41">This is box-41</div>
+      <div class="box" id="box-42">This is box-42</div>
+      <div class="box" id="box-43">This is box-43</div>
+      <div class="box" id="box-44">This is box-44</div>
+    </div>
+  </body>
+</html>

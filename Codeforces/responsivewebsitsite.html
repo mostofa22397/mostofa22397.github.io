@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .wrapper {
+        width: 100%;
+      }
+      .img-bannar {
+        display: none;
+      }
+      .img-info h2 {
+        padding: 30px 30px 20px;
+        font-size: 50px;
+        font-family: sans-serif;
+        color: #111;
+        line-height: 46px;
+      }
+      .img-info p {
+        padding: 0px 30px 30px;
+        font-size: 19px;
+        font-family: sans-serif;
+        color: #111;
+        line-height: 26px;
+      }
+      .img-me {
+        width: 100%;
+      }
+      @media only screen and (min-width: 768px) {
+        .img-bannar {
+          display: block;
+          width: 100%;
+          padding-bottom: 30px;
+        }
+        .wrapper {
+          width: 600px;
+          margin: 0 auto;
+        }
+        .img-info h2 {
+          padding: 30px 30px 39px;
+          font-size: 70px;
+          font-family: sans-serif;
+          color: #111;
+          line-height: 86px;
+        }
+        .img-info p {
+          padding: 0px 30px 30px;
+          font-size: 31px;
+          font-family: sans-serif;
+          color: #111;
+          line-height: 43px;
+        }
+        .img-me {
+          padding-top: 20px;
+        }
+      }
+      @media only screen and (min-width: 1000px) {
+        .wrapper {
+          width: 1000px;
+        }
+        .img-info {
+          width: 50%;
+          float: right;
+        }
+        .img-info h2 {
+          padding: 20px 30px 0px;
+        }
+        .img-info p {
+          padding: 20px 0px 0px 30px;
+        }
+        .img-me {
+          padding-top: 30px;
+          width: 50%;
+          float: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="img-bannar"
+      src="images/cereal-563796_1920.jpg"
+      alt="another.pics"
+    />
+    <div class="wrapper">
+      <artical class="img-info">
+        <h2>Yay!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          molestiae natus architecto quod magni suscipit eum iure fugit
+          cupiditate nam possimus, est provident quidem aut inventore labore a
+          sed cumque?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium,
+          fugit dolores. Neque, recusandae at. Minima recusandae nam rem quae
+          dolores qui, ratione sint, doloribus ad ab vero reiciendis, repellat
+          voluptas.
+        </p>
+      </artical>
+      <img
+        class="img-me"
+        src="images/spice-370114_1920.jpg"
+        alt="anoter.pics"
+      />
+    </div>
+  </body>
+</html>

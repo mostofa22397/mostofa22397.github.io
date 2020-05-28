@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      @media only screen and (min-width: 300px) and (max-width: 400px) {
+        body {
+          background-color: black;
+          color: white;
+        }
+        .container {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section aside aside aside"
+            "footer footer footer footer";
+        }
+      }
+      @media only screen and (min-width: 400px) and (max-width: 500px) {
+        body {
+          background-color: green;
+        }
+        .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+      .item {
+        background-color: rebeccapurple;
+        color: white;
+        padding: 6px;
+      }
+      #navbar {
+        grid-area: navbar;
+      }
+      #section {
+        grid-area: section;
+      }
+      #aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="item">
+        Home Services About Contact us
+      </div>
+      <div id="section" class="item">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+        cupiditate omnis illum autem. Molestiae praesentium laudantium, iusto
+        dolore et necessitatibus neque nam reiciendis natus soluta dolorem
+        tempore? Perspiciatis, laboriosam quia.
+      </div>
+      <div id="aside" class="item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate hic
+        quas dignissimos debitis non recusandae adipisci, pariatur, quam odit
+        odio fugit et consequatur consectetur? Repellendus minus doloremque eius
+        unde quis!
+      </div>
+    </div>
+    <footer class="item">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima
+      blanditiis odio deserunt qui sit, iusto quidem provident ducimus magni,
+      alias recusandae in quasi voluptatem porro sint aperiam ipsam
+      voluptatibus?
+    </footer>
+  </body>
+</html>
