@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is container.</h1>
+    </div>
+    <script>
+        console.log('This is console log.')
+        let i=0;
+        for(i=0;i<4;i++){
+            console.log(i)
+        }
+        let name=['Ahammed','Al','Mostofa','Mohammad']
+        for (let index = 0; index < name.length; index++) {
+            console.log ("Hello, friend " +name[index]);
+            
+        }
+    name.forEach( function f(element) {
+            console.log("Hello, friend "+element)
+        });
+        for(element of name){
+            console.log("Hello, friend "+element+"How are you?")
+        }
+        let employee={
+            name:'Ahammed',
+            age:34,
+            salary:34000
+        }
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`)
+        }
+        let j=0;
+        while(j<4){
+            console.log(`${j} is less than 4`);
+            j++;
+        }
+        let l=0;
+        do{
+            console.log(`${l} is less than 5`)
+            l++;
+        }
+        while(l<5)
+
+    </script>
+</body>
+</html>
