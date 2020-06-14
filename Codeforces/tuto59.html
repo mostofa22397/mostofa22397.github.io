@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 6px;
+            text-align: center;
+            background-color: cornsilk;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time is <span id="time"></span></h1>
+    </div>
+    <script>
+        let now=new Date();
+        console.log(now);
+        let news=new Date(2020,2,3,4,5,5,10);
+        console.log(news);
+        let  year=news.getFullYear()
+        console.log('The year is '+year);
+        let month=news.getMonth()
+        console.log('The month is '+month);
+        let date=news.getDate();
+        console.log('The date is '+date)
+        news.setFullYear(2019)
+        news.setHours(3)
+        console.log(news);
+        function update(){
+            time.innerHTML=new Date();
+        }
+        setInterval(
+            update,1000
+        )
+    </script>
+</body>
+</html>
