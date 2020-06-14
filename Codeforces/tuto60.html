@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is console log.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime unde deleniti aperiam aut adipisci, sed reiciendis? Quae, est cupiditate consequatur distinctio ab dolore, veritatis magnam quaerat magni ipsam debitis nulla.</p>
+    </div>
+    <script>
+        function greet(){
+            console.log('Good Morning.')
+        }
+        greet();
+        setTimeout(() => {
+           console.log('This is console log.') 
+        },1000);
+     greet=()=>{
+            console.log('This is another console log.')
+        }
+        greet();
+        let sum=(a,b)=>a+b;
+        let half=a=>a/2;
+        let obg={
+            greeting:'Hello, ',
+            name:['Ahammed','Mohammed','Mostofa'],
+            speak(){
+                this.name.forEach((red)=>{
+                    console.log(this.greeting+'Good Morning '+red)
+                })
+            }
+        }
+        obg.speak()
+    </script>
+</body>
+</html>
