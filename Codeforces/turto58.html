@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is container.</h1>
+        <h2>Time is <span id="time"></span></h2>
+        <p id ='para'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officiis qui quisquam, itaque distinctio praesentium voluptas consectetur numquam assumenda quam animi, quidem veniam vero tenetur eius explicabo. Sequi, quisquam sed!</p>
+    </div>
+    <button type='button' id='btn'>Show/Hide</button>
+    <script>
+        timeOut=setTimeout(() => {
+            document.getElementById('para').style='color:blue';
+        },5000);
+        function age(){
+            clearTimeout(timeOut);
+
+        }
+        document.getElementById('btn').addEventListener('click',age);
+        function greet(name,text){
+            console.log('Hello, Good Morning'+name+""+text);
+
+        }
+        time=setTimeout(greet, 5000,'Ahammed,', "What's going on?");
+        console.log(time);
+        clearTimeout(time);
+        r=setInterval(greet, 5000,'Mohammed, ',"How are you?");
+        clearInterval(r);
+        function display(){
+            time=new Date();
+            console.log(time)
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(display,1000);
+
+    </script>
+</body>
+</html>
