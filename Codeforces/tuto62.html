@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This is container.</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+        exercitationem, aperiam voluptates fugit repudiandae vitae tempore
+        reprehenderit facere inventore nam nostrum a expedita esse dolorum nihil
+        cumque autem culpa odio!
+      </p>
+    </div>
+    <script>
+      let object = {
+        name: "Ahammed",
+        age: 34,
+        religious: "Islam",
+        maritalstatus: "Married",
+        working_status: "Foreman",
+        salary: 34000,
+      };
+      console.log(object);
+      let my_object = JSON.stringify(object);
+      console.log(my_object);
+      my_object = my_object.replace(34000, 35000);
+      console.log(my_object);
+      let new_object = JSON.parse(my_object);
+      console.log(new_object);
+    </script>
+  </body>
+</html>
