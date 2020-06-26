@@ -74,14 +74,14 @@ body {
 .img-text-wrapper.subtitle {
   color: transparent;
   font-weight: 600;
-  transition: 1s;
+  transition: 0.5s;
 }
 .img-text-wrapper:hover .subtitle {
   font-weight: 600;
   color: lightseagreen;
 }
 .img-darken {
-  transition: 1s;
+  transition: 0.5s;
   filter: brightness(10%);
 }
 .two-column-wrapper {
