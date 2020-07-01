@@ -1,0 +1,16 @@
+.tutorial {
+  padding: 10px;
+  text-align: center;
+}
+.icon {
+  color: rgb(34, 18, 124);
+}
+.icon:hover {
+  color: sienna;
+}
+p {
+  color: teal;
+}
+h3 {
+  color: rgb(172, 20, 20);
+}
