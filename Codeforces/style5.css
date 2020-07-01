@@ -1,0 +1,17 @@
+.tutorial {
+  text-align: center;
+
+  padding: 19px 29px;
+}
+.icon {
+  color: maroon;
+}
+p {
+  color: mediumvioletred;
+}
+h3 {
+  color: olive;
+}
+.icon:hover {
+  color: rgb(179, 19, 19);
+}
