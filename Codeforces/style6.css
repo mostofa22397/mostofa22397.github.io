@@ -1,0 +1,15 @@
+.img {
+  width: 200px;
+  padding-bottom: 10px;
+}
+#section {
+  text-align: center;
+  background-color: indianred;
+  color: white;
+  font-family: sans-serif;
+}
+h1 {
+  padding: 5% 10%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+}
