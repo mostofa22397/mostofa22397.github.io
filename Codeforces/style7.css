@@ -1,0 +1,11 @@
+#section {
+  padding: 5% 10%;
+  text-align: center;
+  background-color: indianred;
+}
+.class {
+  padding: 5%;
+}
+.card:hover {
+  box-shadow: 2px 5px 6px 1px black;
+}
