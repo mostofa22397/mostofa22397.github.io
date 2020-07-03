@@ -1,17 +1,11 @@
-.tutorial {
+#section {
   text-align: center;
-
-  padding: 19px 29px;
+  padding: 5% 10%;
+  background-color: indianred;
 }
-.icon {
-  color: maroon;
+.class {
+  padding: 5%;
 }
-p {
-  color: mediumvioletred;
-}
-h3 {
-  color: olive;
-}
-.icon:hover {
-  color: rgb(179, 19, 19);
+.card:hover {
+  box-shadow: 5px 10px 20px 1px black;
 }
